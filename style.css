@@ -1,0 +1,424 @@
+@font-face {
+    font-family: Maharlika;
+    src: url(elementos/Maharlika-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Ananda Black';
+    src: url(elementos/Ananda\ Black\ Personal\ Use.ttf);
+}
+
+@font-face {
+    font-family: Ananda;
+    src: url(elementos/Ananda\ Personal\ Use.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    border: none;
+
+    --cor1: #EDD6E9;
+    --cor2: #EDEAE3;
+    --cor3: #c4699e;
+    --margin1: 10px;
+    --padding: 70px 0px;
+    --sombra: 0px 5px 4px rgba(0, 0, 0, 0.267);
+}
+
+/* Formatação geral - Títulos e Subtítulos */
+
+h1, h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: Maharlika, sans-serif;
+}
+
+h2{
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.titulo{
+    font-family: Ananda;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #c4699e;
+
+}
+
+.h2-p p{
+    text-align: center;
+}
+
+hr{
+    display: block;
+    height: 5px;
+    margin-top: 5px;
+    background-color: var(--cor2);
+    border: none;
+}
+
+/* Cards */
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 20px 13px;
+    padding: 15px;
+
+    /* background-color: rgb(32, 47, 255); */
+}
+
+.card{
+    width: 22%;
+    min-width: 200px; 
+    height: 300px;
+
+    background-image: url('elementos/img/004865_000003--1702557351--camisola-amanda-estampada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#conteudo-principal{
+    display: flex;
+}
+#sec1 {
+    width: 25%;
+
+    background-color: var(--cor2);
+}
+
+.span-sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 10px;
+    font-family: Maharlika, sans-serif;
+    font-size: 25px;
+    color: var(--cor3);
+
+}
+
+#lista-sec1-li1{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 10px;
+}
+
+/*aplicar efeito glass*/
+#lista-sec1-li1 li{
+    background-color: rgba(255, 255, 255, 0.288);
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#lista-sec1-li1 li:hover{
+    background-color: white;
+}
+
+.li-sec1 p, #lista-sec1-li4, #lista-sec1-li5{
+    background-color: white;
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.li-sec1 p:hover, #lista-sec1-li4:hover, #lista-sec1-li5:hover {
+    background-color: var(--cor3);
+    color: white;
+    cursor: pointer;
+}
+
+/*aplicar efeito de transição */
+#sec2{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    border-bottom: 40px solid var(--cor2);
+    border-right: 10px solid var(--cor2) ;
+}
+
+/* Header */
+.header-principal{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 0px 10px;
+
+    background-color: var(--cor1);
+}
+
+#header-nav1, #header-nav2{
+    display: flex;
+    gap: 20px;
+}
+
+#header-nav2 img{
+    height: 40px;
+}
+
+/* Banner Principal */
+.banner-principal{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    padding-bottom: 50px;
+
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+.banner-principal > .area-img{
+    width: 45%;
+}
+
+.cont-banner{
+    width: 55%;
+    padding-top: 60px;
+}
+
+/* Título do Banner */
+.cont-banner > .titulo-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: white;
+}
+
+.h1-a{
+    font-size: 2rem;
+}
+
+.cont-banner > p{
+    padding: 15px;
+    padding-left: 80px;
+    text-align: end;
+    color: white;
+}
+
+/* grupo de botões abaixo do banner */
+.gp-btn{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    padding: 20px 10px;
+    margin: 5px 0px;
+    box-shadow: var(--sombra);
+
+    background-color: #EDD6E9;
+}
+
+.gp-btn > li{
+    width: 20%;
+    min-width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 0px;
+    background-color: black;
+}
+
+.gp-btn > li > a{
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+}
+
+.sec-especial{
+    box-shadow: var(--sombra);
+    padding: 40px 10px 70px 0px;
+}
+
+.sec-especial div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sec-especial div div{
+    flex: 1;
+    /* breakpoint
+    height: 350px; */
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* border: 1px solid brown; */
+}
+
+.sec-especial div div h2{
+    background-color: transparent;
+    margin-bottom: 10px;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    width: 200px;
+}
+
+#sec-especial-card1{
+    padding-bottom: 40px;
+}
+
+#sec-especial-img1{
+    height: 260px;
+}
+
+#sec-especial-img2{
+    height: 350px;
+    width: 300px;
+}
+
+#sec-especial-img3{
+    height: 300px;
+    width: 250px;
+}
+
+.sec-especial p{
+    /*breakpoint
+    padding: 20px 10px;
+    text-align: center;*/
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.area-prod-eventos > .cards > .card{
+    border-radius: 8px;
+}
+
+.sec-categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding);
+    box-shadow: var(--sombra);
+}
+
+#sec-categ-input{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.sec-categorias p{
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.fundo-txt-card{
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.fundo-txt-card h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(252, 252, 252, 0.973);
+    font-size: 85px;
+    text-align: end;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+#area-prod-eventos{
+    box-shadow: var(--sombra);
+    padding: var(--padding);
+}
+
+.sec-cadastro, .sec-fale-conosco{
+    background-color: var(--cor2);
+    padding: 50px 40px 50px 50px;
+    border-top: 2px dotted white ;
+}
+
+ 
+.div-sec{
+background-color: white;
+padding: 20px 50px 50px 50px;
+border-radius: 10px;
+box-shadow: var(--sombra);
+}
+
+.sec-cadastro-conteudo, .sec-fale-cnsc-conteudo{
+    margin-top: 20px;
+    padding: 50px 100px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#sec-cadastro-conteudo-img, #sec-fale-cnsc-conteudo-img{
+    height: 400px;
+    width: 400px;
+    border: 3px solid var(--cor3);
+    border-radius: 50%;
+    background-image: url(elementos/img/007973_000001--1654286757--camisola-sem-bojo-com-renda.jpg);
+    background-size: cover;
+}
+
+.inputs-area{
+    padding-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs-area .input input{
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+.inputs-area button{
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--cor3);
+}
+
+.inputs-area button:hover{
+    background-color: var(--cor1);
+    color: var(--cor3);
+}
+
+.sec-fale-conosco{
+    border: none;
+}
+
+#sec-fale-cnsc-texto{
+    height: 100px;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    height: 300px;
+}

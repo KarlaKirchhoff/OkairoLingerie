@@ -1,0 +1,4 @@
+ajeitar responsividade: áreas do banner, paddingo do conteudo do banner
+    tamanhos dos botoes abaixo do banner;
+
+    breakpoint: larrgura: 578 > banner: menu 'hamburguer' -> remover nav1

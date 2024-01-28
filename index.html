@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylejs.css">
+    <title>Okairo Lingerie</title>
+</head>
+
+<body>
+
+    <header class="header-principal">
+        <img src="#" alt="logo tipográfica 'OK.L'">
+
+        <nav id="header-nav1">
+            <a href="#" class="header-link">Novo</a>
+            <a href="#" class="header-link" onclick="headerCateg()">Categorias</a>
+            <a href="#" class="header-link">Promo</a>
+        </nav>
+
+        <nav class="header-icons" id="header-nav2">
+            <img src="elementos/icons/search-icon.png" alt="ícone da pesquisa">
+            <img src="elementos/icons/profile-icon.png" alt="ícone do perfil">
+            <img src="elementos/icons/cart-icon.png" alt="ícone do carrinho">
+        </nav>
+    </header>
+
+    <nav id="nav-categ" class="inativo"></nav>
+
+    <section class="banner-principal banner">
+        <div class="area-img">
+            <img src="" alt="modelo">
+        </div>
+        <div class="area-conteudo cont-banner">
+
+            <div class="titulo-banner">
+                <h1>Okairo</h1>
+                <h1 class="h1-a">Lingerie</h1>
+            </div> <!-- Melhorar </br> -->
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit cum excepturi expedita,
+                voluptate quidem esse non accusamus.</p>
+        </div>
+    </section>
+
+    <div id="conteudo-principal">
+
+        <section id="sec1">
+            <div id="nav-lateral">
+                <ol class="lista-sec1">
+                    <span class="span-sec1">Okairo Lingerie</span>
+
+                    <li>
+                        <ol class="lista-sec1" id="lista-sec1-li1">
+                            <li>Masculino</li>
+                            <li>Feminino</li>
+                            <li>Infantil</li>
+                            <li>Sex Shop</li>
+                        </ol>
+                    </li>
+
+                    <li id="lista-sec1-li2" class="li-sec1">
+                        <p onclick="navLateralFiltros()">Ordenar por: <span>#</span></p>
+                        <div id="navLateral-filtros"></div>
+                        <ol class="lista-sec1">
+                            <!-- <li>Tamanhos</li>
+                            <li>Preços</li>
+                            <li>Mais Vendidos</li>
+                            <li>Mais Recentes</li> -->
+                        </ol>
+                    </li>
+
+                    <li id="lista-sec1-li3" class="li-sec1" >
+                        <p onclick="navLateralCateg()">Categorias <span>#</span></p>
+                        <div id="navLateral-categ"></div>
+                    </li>
+                    <li id="lista-sec1-li4">Favoritos</li>
+                    <li id="lista-sec1-li5">Lançamentos</li>
+                    <li></li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="sec2">
+            <main class="conteudo">
+
+                <ol class="gp-btn">
+                    <li><a href="#">Alto contraste</a>
+                    <li><a href="#">Tons pastéis</a></li>
+                    <li><a href="#">Básicos</a></li>
+                    <li><a href="#">Terrosos</a></li>
+                    <!-- Em BD: criar categoria de cores -->
+                </ol>
+
+                <hr>
+
+                <section class="sec-especial">
+                    <h2 class="titulo">Aventura, Amor, Desejo</h2>
+                    <div>
+                        <div id="sec-especial-card1">
+                            <h2>Compre Online</h2>
+                            <img src="elementos/img/004865_000003--1702557351--camisola-amanda-estampada.jpg" alt=""
+                                id="sec-especial-img1">
+                        </div>
+                        <div id="sec-especial-card2">
+                            <img src="elementos/img/007911_000001--1612876459--conjunto-sem-bojo-com-arco.jpg" alt=""
+                                id="sec-especial-img2">
+                        </div>
+                        <div id="sec-especial-card3">
+                            <img src="elementos/img/007973_000001--1654286757--camisola-sem-bojo-com-renda.jpg" alt=""
+                                id="sec-especial-img3">
+                        </div>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita consectetur quod quidem
+                        placeat, ex dolorem, repellat reiciendis magnam facere illo dolor, labore eos veniam nisi
+                        ratione?
+                        Repellat, atque inventore.</p>
+                </section>
+
+                <hr>
+
+                <div class="sec-categorias">
+                    <h2>categorias</h2>
+
+                    <div class="cards">
+                        <div class="card" id="sec-categ-card1">
+                            <div class="fundo-txt-card">
+                                <h3>pl<br>usi<br>ze</h3>
+                            </div>
+                        </div>
+                        <!-- Plusize -->
+
+                        <div class="card" id="sec-categ-card2">
+                            <div class="fundo-txt-card">
+                                <h3>su<br>tiã<br>s</h3>
+                            </div>
+                        </div>
+                        <!-- Sutiâs -->
+
+                        <div class="card">
+                            <div class="fundo-txt-card" id="sec-categ-card3">
+                                <h3>con<br>jun<br>tos</h3>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="fundo-txt-card" id="sec-categ-card4">
+                                <h3>con<br>jun<br>tos</h3>
+                            </div>
+                        </div>
+                        <!-- Conjuntos -->
+                    </div>
+
+                    <div id="sec-categ-input">
+                        <input type="radio" name="rd-sec-categ" id="">
+                        <input type="radio" name="rd-sec-categ" id="" checked>
+                        <input type="radio" name="rd-sec-categ" id="">
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam amet repudiandae
+                        veritatis
+                        incidunt dolorem nihil accusantium mollitia nesciunt? Neque hic, blanditiis commodi minus
+                        doloremque
+                        eaque molestiae vero veniam animi.
+                    </p>
+                </div>
+
+                <hr>
+
+                <section id="area-prod-eventos">
+                    <img src="" alt="" class="img-padrao1">
+                    <!-- Colocar no Background -->
+
+                    <div class="h2-p">
+                        <h2 class="titulo-de-categoria">Eventos</h2>
+                        <p> -- para eventos especiais -- </p>
+
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="fundo-txt-card" id="sec-prod-card3">
+                                <h3>lua<br>de<br>mel</h3>
+                            </div>
+                        </div>
+                        <!-- Lua de Mel -->
+
+                        <div class="card">
+                            <div class="fundo-txt-card" id="sec-prod-card3">
+                                <h3>chá<br>de<br>beb<br>ê</h3>
+                            </div>
+                        </div>
+                        <!-- Chá de Bebê -->
+
+                        <div class="card">
+                            <div class="fundo-txt-card" id="sec-prod-card3">
+                                <h3>con<br>jun<br>tos</h3>
+                            </div>
+                        </div>
+                        <!-- Chá de Lingerie -->
+                    </div>
+                </section>
+            </main>
+        </section>
+    </div>
+
+
+    <section class="sec-cadastro banner">
+        <div class="div-sec">
+            <div class="h2-p">
+                <h2>Cadastre-se</h2>
+                <p>-- Bem-vindos à Okairo Lingerie --</p>
+            </div>
+
+            <section class="sec-cadastro-conteudo">
+                <!-- Colocar dentro de um formulário -->
+
+                <div id="sec-cadastro-conteudo-img"> </div>
+
+                <div class="inputs-area">
+
+                    <div class="input">
+                        <p>Nome:</p>
+                        <input type="text" name="" id="sec-cad-cont-inptname">
+                    </div>
+                    <div class="input">
+                        <p>Tel:</p>
+                        <input type="tel" name="" id="sec-cad-cont-inpttel">
+                    </div>
+                    <div class="input">
+                        <p>Senha:</p>
+                        <input type="password" name="" id="sec-cad-cont-inptpasw1">
+                    </div>
+                    <div class="input">
+                        <p>Senha:</p>
+                        <input type="password" name="" id="sec-cad-cont-inptpasw2">
+                    </div>
+
+                    <button type="submit">Cadastrar</button>
+                </div>
+        </div>
+    </section>
+    </section>
+
+    <section class="sec-fale-conosco banner">
+
+        <div class="div-sec">
+            <h2>Fale Conosco</h2>
+
+            <section class="sec-fale-cnsc-conteudo">
+
+                <div id="sec-fale-cnsc-conteudo-img"></div>
+
+                <div class="inputs-area">
+                    <!-- Mudar para formulário -->
+                    <div class="input">
+                        <p>Email:</p>
+                        <input type="email" name="sec-fale-cnsc-inptemail" id="sec-fale-cnsc-inptemail">
+                    </div>
+                    <div class="input">
+                        <p>Assunto:</p>
+                        <input type="text" name="sec-fale-cnsc-inptassunto" id="sec-fale-cnsc-inptassunto">
+                    </div>
+                    <div class="input">
+                        <p>Texto:</p>
+                        <input type="text" name="sec-fale-cnsc-texto" id="sec-fale-cnsc-texto">
+                    </div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <div class="area-img">
+            <img src="" alt="logo">
+        </div>
+
+        <div class="footer-conteudo">Guia de compra
+
+            Perguntas frequentes
+            Entregas
+            Trocas e Devoluções
+            Pagamentos</div>
+    </footer>
+
+    <script src="nav.js"></script>
+
+</body>
+</html>

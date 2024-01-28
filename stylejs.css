@@ -1,0 +1,48 @@
+#nav-categ{
+    display: none;
+    height: 50px;
+    width: 100%;
+    background-color: var(--cor3);
+}
+
+#nav-categ ol{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex:1;
+    border: 1px solid white;
+}
+
+#nav-categ ol li{
+    padding: 5px 10px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    color: white;
+}
+
+#nav-categ ol li:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
+.li-sec1 ol{
+    padding: 5px 10px 10px 10px;
+    margin: 0px 10px;
+    background-color: rgba(255, 255, 255, 0.76);
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 8px;
+}
+
+.li-sec1 ol li{
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.li-sec1 ol li:hover{
+    background-color: var(--cor1);
+}
