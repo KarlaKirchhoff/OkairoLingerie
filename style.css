@@ -13,6 +13,15 @@
     src: url(elementos/Ananda\ Personal\ Use.ttf);
 }
 
+:root{
+    --cor1: #EDD6E9;
+    --cor2: #EDEAE3;
+    --cor3: #c4699e;
+    --margin1: 10px;
+    --padding: 70px 0px;
+    --sombra: 0px 5px 4px rgba(0, 0, 0, 0.267);
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -20,15 +29,9 @@
 
     text-decoration: none;
     list-style: none;
-    font-size: 20px;
+    font-size: 1.2rem;
     border: none;
 
-    --cor1: #EDD6E9;
-    --cor2: #EDEAE3;
-    --cor3: #c4699e;
-    --margin1: 10px;
-    --padding: 70px 0px;
-    --sombra: 0px 5px 4px rgba(0, 0, 0, 0.267);
 }
 
 /* Formatação geral - Títulos e Subtítulos */
@@ -150,27 +153,6 @@ hr{
     width: 75%;
     border-bottom: 40px solid var(--cor2);
     border-right: 10px solid var(--cor2) ;
-}
-
-/* Header */
-.header-principal{
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 15px;
-    padding: 0px 10px;
-
-    background-color: var(--cor1);
-}
-
-#header-nav1, #header-nav2{
-    display: flex;
-    gap: 20px;
-}
-
-#header-nav2 img{
-    height: 40px;
 }
 
 /* Banner Principal */
