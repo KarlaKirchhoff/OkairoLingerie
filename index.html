@@ -11,23 +11,9 @@
 
 <body>
 
-    <header class="header-principal">
-        <img src="#" alt="logo tipográfica 'OK.L'">
-
-        <nav id="header-nav1">
-            <a href="#" class="header-link">Novo</a>
-            <a href="#" class="header-link" onclick="headerCateg()">Categorias</a>
-            <a href="#" class="header-link">Promo</a>
-        </nav>
-
-        <nav class="header-icons" id="header-nav2">
-            <img src="elementos/icons/search-icon.png" alt="ícone da pesquisa">
-            <img src="elementos/icons/profile-icon.png" alt="ícone do perfil">
-            <img src="elementos/icons/cart-icon.png" alt="ícone do carrinho">
-        </nav>
-    </header>
-
-    <nav id="nav-categ" class="inativo"></nav>
+    <header class="navheader"></header>
+    <!-- <nav id="nav-categ"> </nav> -->
+    <div style="height: 70px;"></div>
 
     <section class="banner-principal banner">
         <div class="area-img">
@@ -64,12 +50,7 @@
                     <li id="lista-sec1-li2" class="li-sec1">
                         <p onclick="navLateralFiltros()">Ordenar por: <span>#</span></p>
                         <div id="navLateral-filtros"></div>
-                        <ol class="lista-sec1">
-                            <!-- <li>Tamanhos</li>
-                            <li>Preços</li>
-                            <li>Mais Vendidos</li>
-                            <li>Mais Recentes</li> -->
-                        </ol>
+
                     </li>
 
                     <li id="lista-sec1-li3" class="li-sec1" >
@@ -285,7 +266,7 @@
             Pagamentos</div>
     </footer>
 
-    <script src="nav.js"></script>
+    <script src="js/nav.js"></script>
 
 </body>
 </html>
