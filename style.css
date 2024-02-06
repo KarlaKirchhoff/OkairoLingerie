@@ -93,6 +93,7 @@ hr{
 
 #conteudo-principal{
     display: flex;
+    flex-wrap: wrap;
 }
 #sec1 {
     width: 25%;
@@ -156,13 +157,14 @@ hr{
 }
 
 /* Banner Principal */
-.banner-principal{
+.banner-princ{
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
     padding-bottom: 50px;
 
-    background-color: rgba(0, 0, 0, 0.822);
+    background-image: url(elementos/img/007911_000001--1612876459--conjunto-sem-bojo-com-arco.jpg);
+    background-size: cover;
 }
 
 .banner-principal > .area-img{
@@ -182,46 +184,12 @@ hr{
     color: white;
 }
 
-.h1-a{
+.titulo-banner h1{
+    color: rgb(226, 81, 142);
+}
+
+#h1_banner{
     font-size: 2rem;
-}
-
-.cont-banner > p{
-    padding: 15px;
-    padding-left: 80px;
-    text-align: end;
-    color: white;
-}
-
-/* grupo de botões abaixo do banner */
-.gp-btn{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-    padding: 20px 10px;
-    margin: 5px 0px;
-    box-shadow: var(--sombra);
-
-    background-color: #EDD6E9;
-}
-
-.gp-btn > li{
-    width: 20%;
-    min-width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 10px 0px;
-    background-color: black;
-}
-
-.gp-btn > li > a{
-    text-transform: capitalize;
-    text-align: center;
-    line-height: 18px;
-    color: white;
 }
 
 .sec-especial{
@@ -238,8 +206,6 @@ hr{
 
 .sec-especial div div{
     flex: 1;
-    /* breakpoint
-    height: 350px; */
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -254,7 +220,6 @@ hr{
     margin-bottom: 10px;
     font-size: 35px;
     text-align: center;
-    display: flex;
     width: 200px;
 }
 
@@ -373,7 +338,7 @@ box-shadow: var(--sombra);
     gap: 10px;
 }
 
-.inputs-area .input input{
+.inputs-area .input > input{
     border: 1px solid #ccc;
     width: 300px;
 }
@@ -404,3 +369,133 @@ footer{
     color: white;
     height: 300px;
 }
+
+
+@media screen and (max-width: 700px) {
+
+*{
+    /* background-color: rebeccapurple; */
+}
+
+#banner-princ{
+    height: 65vh;
+    padding: 0px;
+    gap: 10px;
+    background-image: none;
+    background-color: #ccc;
+}
+
+#bannerdiv1, #bannerdiv2{
+    width: 50%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider{
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: wheat;
+}
+
+#bannerdiv2{
+    height: 100%;
+    align-items: end;
+}
+
+.texto-banner{
+    width: 100%;
+}
+
+.texto-banner h1{
+    font-size: 2.4rem;
+    text-align: end;
+}
+
+.texto-banner p{
+    text-align: end;
+}
+
+}
+
+
+@media screen and (max-width: 500px){
+
+h2{
+    font-size: 2rem;
+}
+
+#sec1{
+    display: none;
+}
+
+#sec2{
+    width: 100%;
+    border-right: none;
+
+}
+
+#sec2, .sec-cadastro-conteudo, .sec-fale-cnsc-conteudo{
+    overflow: hidden;
+}
+
+#banner-princ{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 0px;
+}
+
+.texto-banner{
+    height: 250px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 5px;
+    background-color: rgba(0, 0, 0, 0.212);
+    margin-bottom: 50px;
+
+}
+.texto-banner h1{
+    color: white;
+    text-align: center;
+}
+
+#h1_banner1{
+    font-size: 2.5rem;
+}
+
+#h1_banner2{
+    font-size: 2rem;
+}
+.texto-banner p{
+    color: white;
+    text-align: center;
+}
+
+.sec-especial{
+    /* background-color: red; */
+    padding: 25px;
+}
+
+.sec-especial div div{
+    /* background-color: rgba(0, 0, 0, 0.37); */
+}
+
+#sec-especial-card1{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#sec-especial-img1{ 
+    height: 300px;
+}
+
+}
+
