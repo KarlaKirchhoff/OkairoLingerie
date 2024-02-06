@@ -103,7 +103,29 @@ function width_desktop(){
         </div> `
     }
 
+    const sec_apresent = ()=>{
+        sec =  document.getElementById('sec_apresent')
+        sec.innerHTML = `
+        <div>
+            <div id="sec-especial-card1">
+                <h2>Compre Online</h2>
+                <img src="elementos/img/004865_000003--1702557351--camisola-amanda-estampada.jpg" alt=""
+                    id="sec-especial-img1">
+            </div>
+            <div id="sec-especial-card2">
+                <img src="elementos/img/007911_000001--1612876459--conjunto-sem-bojo-com-arco.jpg" alt=""
+                    id="sec-especial-img2">
+            </div>
+            <div id="sec-especial-card3">
+                <img src="elementos/img/007973_000001--1654286757--camisola-sem-bojo-com-renda.jpg" alt=""
+                    id="sec-especial-img3">
+            </div>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita consectetur quod quidem  placeat, ex dolorem, repellat reiciendis magnam facere illo dolor, labore eos veniam nisi ratione?Repellat, atque inventore.</p> `
+    }
+    criarNavbar()
     bannerDesktop()
+    sec_apresent()
 }
 
 function width700px(){
@@ -143,8 +165,7 @@ if(larguraviewport <= 500){
 } else if(larguraviewport <=700){
     width700px()
 }
-else{
-    criarNavbar()
+else if(larguraviewport >700){
     width_desktop()
 }
 
