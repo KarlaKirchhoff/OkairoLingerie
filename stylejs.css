@@ -99,9 +99,94 @@
     background-color: var(--cor1);
 }
 
-@media screen and (max-width: 470px) {
-.navbar{
-    background-color: red;
+.cont-banner > p{
+    padding: 15px;
+    padding-left: 80px;
+    text-align: end;
+    color: white;
+}
+
+/* grupo de botões abaixo do banner */
+.gpbtn-categ{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    padding: 20px 10px;
+    margin: 5px 0px;
+    box-shadow: var(--sombra);
+    background-image: url(elementos/img/backgoundlavanda.jpg);
+}
+
+.gpbtn-categ > li{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 0px;
+    background-color: black;
+}
+
+.gpbtn-categ > li > a{
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .gpbtn-categ{
+        height: 70px;
+        gap: 10px;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    
+    .gpbtn-categ li{
+        width: auto;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.527);
+        box-shadow: var(--sombra);
+    }
+    
+    .gpbtn-categ li a{
+        text-wrap: nowrap;
+        font-size: 1rem;
+        color: black;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+}
+
+.navbar img{
+    margin: 10px;
+}
+
+.navbar .search{
+    border-radius: 25px;
+    width: 200px;
+    padding: 7px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.navbar .menuicon{
+    height: 30px;
+    margin-right: 20px;
 }
 
 }
